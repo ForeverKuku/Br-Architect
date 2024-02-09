@@ -5,121 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Br Architect</title>
     <link rel="stylesheet" href="../src/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<style>
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Adjust z-index as needed */
+    /* Add any other styling you need */
+}
+
+.hidden {
+    display: none;
+}
+
+</style>
 </head>
   <!--Header-->
-  <header>
-    <div class="box-border top-0 bg-white sticky  w-full h-16 justify-between flex gap-44  mr-2">
-        <h2 class="mr-2 text-2xl">Br Architects</h2>
-    <p class="text-xl font-light">Projects</p>
-    <p class="text-xl font-light">About</p>
-    <p class="text-xl font-light">Contact</p>
-    </div>
-  </header>
+
+
 
   <body class="m-4  p-2 box-border">
-    <div class="image1">
-      <img src="../img/architect1.jpg" alt="architect">
-    </div>
+    <header class="">
+     
+    
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between" id="navbar">
+      <div class="flex justify-between items-center">
+        <span class="text-2xl font-[Poppins] cursor-pointer">
+          <img class="h-6 inline" src="https://th.bing.com/th?id=OIP.lKJxP2CUwjvpD7PfNfjU7gHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="">
+          Br Architects
+        </span>
+        <span class="text-3xl cursor-pointer md:hidden block mx-2 ">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+      <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <li class="mx-4 my-6 md:my-0"> <a href="#" class="text-xl hover:text-cyan-500 duration-500">Home</a></li>
+        <li class="mx-4 my-6 md:my-0">  <a href="#" class="text-xl hover:text-cyan-500 duration-500">Projects</a></li>
+        <li class="mx-4 my-6 md:my-0">  <a href="#" class="text-xl hover:text-cyan-500 duration-500">About Us</a></li>
+        <li class="mx-4 my-6 md:my-0"> <a href="#" class="text-xl hover:text-cyan-500 duration-500">Services</a></li>
+       
+        <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">
+          Contact Us
+        </button>
+      </ul>
+      
+
+    </nav>
+
+
+  </header>
+<!-- <div class="container"> -->
+  <div class="flex-wrap flex lg:flex-row flex-col justify-between items-center mx-5 md:mx-20 md:mb-5">
+
+  <div class="image1 ">
+    <img src="../img/architect1.jpg" alt="architect" class="w-full h-auto py-2 my-3" style="max-width: 100%;">
   </div>
-   <br><br>
-  <div class="flex-wrap flex box-border justify-start grid gap-x-6 gap-y-3 grid-cols-4">
+  
+ 
+ 
     <div>
         <h5 class="text-2xl">Summer House</h5>
         <img    src="../img/Summerhouse.jpg" alt="Summer">
     </div>
     <div class="imageone">
-        <h5 class="text-2xl ">Brick House</h5>
+        <h5 class="text-2xl">Brick House</h5>
         <img src="../img/brickhouse2.jpg" alt="brickhouse2">
     </div>
+
     <div class="imageone">
         <h5 class="text-2xl ">Renovated</h5>
         <img src="../img/renovatedhouse2.jpg" alt="renovatedhouse2">
     </div>
+
     <div class="imageone">
         <h5 class="text-2xl ">Barn House</h5>
         <img src="../img/barnhouse2.jpg" alt="barn">
     </div>
+
     <div class="imageone">
         <h5 class="text-2xl ">Summer House</h5>
         <img src="../img/Summerhouse.jpg" alt="Summer">
     </div>
+
     <div class="imageone">
         <h5 class="text-2xl ">Brick House</h5>
         <img src="../img/brickhouse2.jpg" alt="brickhouse2">
     </div>
+
     <div class="imageone">
         <h5 class="text-2xl ">Renovated</h5>
         <img src="../img/renovatedhouse2.jpg" alt="renovatedhouse2">
     </div>
+
     <div class="imageone">
         <h5 class="text-2xl ">Barn House</h5>
         <img src="../img/barnhouse2.jpg" alt="barn">
     </div>
 </div>
-<br><br>
+
+</div>
+
 
    <!-- About Section -->
-   <div class="pr-4" >
-    <h3 class="text-2xl">About</h3>
-    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+   <div class="md:mx-20 justify-center" >
+    <h3 class="md:text-5xl text-2xl text-center bold">About</h3>
+    <p class="text-center text-lg py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat.
+      
     </p>
   </div>
-<br><br>
+
 
   <!--Architects Section-->
-  <div class="flex-wrap flex box-border justify-start grid gap-x-6 gap-y-3 grid-cols-4">
+  <div class="grid md:grid-cols-4 grid-cols-1 gap-2 md:mx-20 text-center">
     <div>
     <img    src="../img/JohnDoe.jpg" alt="John Done">
     <h5 class="text-2xl">John Doe</h5>
     <p class="">CEO & Founder</p>
-    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    <p  class="py-1 text-center">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+    <p><button class="w3-button w3-light-grey w3-block bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">Contact</button></p>
   </div>
 <div class="">
     <img src="../img/JaneDoe.jpg" alt="Jane Doe">
     <h5 class="text-2xl ">Jane Doe</h5>
     <p class="w3-opacity">Architect</p>
     <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    <p><button class="w3-button w3-light-grey w3-block bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">Contact</button></p>
 </div>
 <div class="">
     <img src="../img/MikeRoss.jpg" alt="Mike Ross">
     <h5 class="text-2xl ">Mike Ross</h5>
     <p class="w3-opacity">Architect</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="">Contact</button></p>
+      <p><button class="w3-button w3-light-grey w3-block bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">Contact</button></p>
 </div>
 <div class="">
     <img src="../img/DanStar.jpg" alt="Dan Star">
     <h5 class="text-2xl ">Dan Star</h5>
     <p class="w3-opacity">Architect</p>
       <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="">Contact</button></p>
+      <p><button class="w3-button w3-light-grey w3-block bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded">Contact</button></p>
 </div>
 </div>
 
-<br><br>
-   <!-- Contact Section -->
-    <h3 class="text-2xl ">Contact</h3>
-    <br><br>
-    <hr>
-    <br><br>
-    <p>Lets get in touch and talk about your next project.</p>
-    <form action="" target="_blank">
-      <input class=" border-y-4"    type="text" placeholder="Name" required name="Name"><br><br>
-      <input class=""      type="text" placeholder="Email" required name="Email"><br><br>
-      <input class=""   type="text" placeholder="Subject" required name="Subject"><br><br>
-      <input class=""    type="text" placeholder="Comment" required name="Comment"><br><br>
-      <button class=""    type="submit"><br>
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form>
-  </div>
-<br><br>
+  <!-- Contact Section -->
+<div class="mx-20">
+  <h3 class="text-2xl">Contact</h3>
+
+  <hr class="my-4">
+
+  <p class="bold text-2xl">Lets get in touch and talk about your next project.</p>
+  <form action="" target="_blank" class="mt-4">
+    <input class="border p-2 w-full mb-2" type="text" placeholder="Name" required name="Name"><br>
+    <input class="border p-2 w-full mb-2" type="text" placeholder="Email" required name="Email"><br>
+    <input class="border p-2 w-full mb-2" type="text" placeholder="Subject" required name="Subject"><br>
+    <textarea class="border p-2 w-full mb-2" placeholder="Comment" required name="Comment"></textarea><br>
+    <button class="bg-cyan-400 text-white font-[Poppins] py-2 px-4 hover:bg-cyan-500 rounded mb-5" type="submit">
+      SEND MESSAGE
+    </button>
+  </form>
+</div>
+
+
+
+
 <!-- Image of location/map -->
-<div class="w3-container">
+<div class="w3-container mx-20 h-400">
   <img src="../img/street.jpg" class="w3-image" style="width:100%">
 </div>
 
@@ -128,7 +184,18 @@
 
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
+<footer class="w3-center w3-black w3-padding-16 mx-20">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+
 </footer>
+
+<script>
+  function Menu(e){
+    let list=document.querySelector('ul');
+    e.name==='menu'?(e.name= "close", list.classList.add('top-[80px]'),list.classList.add('opacity-100')):(e.name='menu', list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+
+  }
+</script>
+
+
 </body>
